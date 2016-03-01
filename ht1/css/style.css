@@ -1,0 +1,38 @@
+/*@import "reset.css";*/
+
+body{
+    font-family: 'Times New Roman', sans-serif;
+
+}
+.division-line{
+    margin: 25px 0;
+    border-bottom: 1px solid #7B7B7B;
+}
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 35px;
+    border: 1px solid #CFCFCF;
+    box-shadow: 5px 4px 19px 5px #969696
+}
+h1{
+    text-align: center;
+}
+img{
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+}
+li{
+    line-height: 25px;
+}
+h4{
+    font-weight: 400;
+}
+span{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+a{
+    color: #0000F3;
+}
