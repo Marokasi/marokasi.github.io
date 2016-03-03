@@ -1,0 +1,54 @@
+.wrapper{
+    width: 1050px;
+    margin: 0 auto;
+    padding: 50px 50px 60px 50px;
+    border-left: 2px solid #dbdbdb;
+    border-right: 2px solid #dbdbdb;
+}
+/* Herder */
+img{
+    padding-bottom: 40px;
+}
+
+.top-nav{
+    margin-bottom: 40px;
+    background-color: #525151;
+}
+.top-nav:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.top-nav a {
+    float: left;
+    padding: 15px 25px;
+    font-family: 'Times New Roman ', sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.top-nav a:hover{
+    background-color: #3f3f3f;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+/* Content */
+
+section:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.bycicle-post{
+    width: 30%;
+    margin-right: 50px;
+}
+
+.content{
+    width: 70%;
+    float: right;
+    text-align: left;
+}
+.bycicle-post{
+    width:100%;
+}
