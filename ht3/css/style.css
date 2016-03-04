@@ -1,3 +1,7 @@
+body{
+    font-family: 'Times New Roman ', sans-serif;
+}
+
 .wrapper{
     width: 1050px;
     margin: 0 auto;
@@ -6,7 +10,7 @@
     border-right: 2px solid #dbdbdb;
 }
 /* Herder */
-img{
+.logo{
     padding-bottom: 40px;
 }
 
@@ -22,7 +26,6 @@ img{
 .top-nav a {
     float: left;
     padding: 15px 25px;
-    font-family: 'Times New Roman ', sans-serif;
     font-size: 15px;
     color: #fff;
 }
@@ -39,16 +42,57 @@ section:after{
     display: block;
     clear: both;
 }
-.bycicle-post{
+.sidebar-left{
+    display: inline-block;
     width: 30%;
-    margin-right: 50px;
+}
+.sidebar-left li{
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    color: #c8c8c8;
+    font-size: 15px;
+}
+
+.sidebar-left li:hover {
+    border:1px solid #dbdbdb;
+    transform: translateX(20px);
 }
 
 .content{
-    width: 70%;
     float: right;
+    width: 65%;
     text-align: left;
 }
 .bycicle-post{
     width:100%;
+}
+.description{
+    padding: 40px 25px 60px;
+}
+
+/* Footer */
+
+footer{
+    padding: 15px 25px;
+    background-color: #e1e1e1;
+}
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.bottom-nav{
+    float: left;
+}
+.bottom-nav li{
+    float: right;
+    margin-right: 100px;
+    color: #000;
+    font-size: 15px;
+}
+.bottom-nav li:hover{
+    border-bottom: 1px solid #000;
+}
+.rights{
+    float:right;
 }
