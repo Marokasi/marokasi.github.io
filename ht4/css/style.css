@@ -3,10 +3,11 @@
 }
 
 body{
-    background: url("../img/bg-slice.jpg")repeat-x;
+    background: url("../img/bg-slice.jpg")repeat-x top center;
+    background-color: #0C75A0;
 }
 .wrapper{
-    width: 1000px;
+    width: 1008px;
     margin: 37px auto;
     background-color: #fff;
     border: 1px solid #c7cacf;
@@ -75,12 +76,14 @@ header:after{
     display: block;
 }
 /*   Не знаю к чему относится эта часть страницы. То-ли продолжается хедер, то-ли уже идет основной контенс - збивает выпадающее меню */
-.portfolio {
-    background-image: url("../img/ggg.jpg");
-    height: 230px;
+
+.portfolio img{
+    width: 100%;
+    margin-bottom: -2px;
     border-top: 2px solid #128aa7;
     border-bottom: 2px solid #128aa7;
 }
+
 
 .nav-content{
     display: block;
@@ -89,39 +92,45 @@ header:after{
     background: #303030;
     font-size: 14px;
 }
+
 .nav-content li{
     display: inline-block;
-    margin: 10px 54.4px;
     height: 20px;
 }
-
 .nav-content a{
     color: #fff;
+}
+.menu:after{
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.menu{
+    background-color: #303030;
 }
 ul.menu > li {
     float: left;
     position: relative;
-    background-color: #303030;
+    /*background-color: #303030;*/
 }
 ul.menu > li > a {
     display: block;
     color: #fff;
-    padding: 10px 58px;
+    padding: 10px 59px;
     text-decoration: none;
 }
-ul.menu > li > a:hover {
+ul.menu > li:hover {
     background-color: #635d5d;
 }
 ul.submenu {
     display: none;
     position: absolute;
-    width: 160px;
+    width: 100%;
     top: 34px;
     left: 0;
     background-color: white;
-}
-ul.submenu > li {
-    display: block;
 }
 ul.submenu > li > a {
     display: block;
@@ -172,6 +181,7 @@ ul.menu > li:hover > ul.submenu {
 /* Footer */
 
 footer{
+    margin-bottom: 50px;
     color: #fff;
     text-align: center;
 }

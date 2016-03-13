@@ -1,0 +1,36 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 960px;
+    margin: 100px auto;
+}
+table{
+    width: 800px;
+    margin: auto;
+}
+tr{
+    height: 75px;
+    border: 5px solid #000;
+}
+td {
+    width: 100px;
+    border: 5px solid #000;
+}
+.white-bg{
+    background: #fff;
+}
+.orange-bg{
+    background: #ff5e39;
+}
+.yellow-bg{
+    background: #fff967;
+}
+.black-bg{
+    background: #6f6d6e;
+}
+.blue-bg{
+    background: #104f8d;
+}
