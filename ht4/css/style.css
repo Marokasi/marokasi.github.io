@@ -7,7 +7,7 @@ body{
     background-color: #0C75A0;
 }
 .wrapper{
-    width: 1008px;
+    width: 1000px;
     margin: 37px auto;
     background-color: #fff;
     border: 1px solid #c7cacf;
@@ -113,13 +113,18 @@ header:after{
 ul.menu > li {
     float: left;
     position: relative;
-    /*background-color: #303030;*/
 }
 ul.menu > li > a {
     display: block;
     color: #fff;
-    padding: 10px 59px;
+    padding: 10px 56px;
     text-decoration: none;
+}
+ul.menu > li>.dropdown:after{
+    content:"\f0da";
+    margin-left: 5px;
+    font-family: "FontAwesome";
+    vertical-align: middle;
 }
 ul.menu > li:hover {
     background-color: #635d5d;
