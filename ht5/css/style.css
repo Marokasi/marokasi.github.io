@@ -22,19 +22,21 @@
     visibility: hidden;
 }
 body{
-    font-family: "Helvetica", sans-serif;
-}
-
-.wrapper{
     background:url("../img/homework5.jpg")no-repeat;
     background-size: cover;
     min-height: 1500px;
     margin: 0 auto;
+    /*font-family: "Helvetica", sans-serif;*/
+}
+
+.wrapper{
+
 }
 /* Header */
 
 header{
-    background: #085392;
+    background: url("../img/header-bg.png") repeat-x;
+    background-size: cover;
 }
 .navigation{
     float: right;
@@ -58,68 +60,103 @@ header{
 }
 .different a{
     display: block;
-    padding: 20px 50px;
+    padding: 11px 50px;
     color: #fff;
     font-size: 14px;
+}
+.navigation li.change>a{
+    padding: 20px 50px;
 }
 .different a:hover{
     background: #4eabda;
     text-decoration: underline;
 }
+span.fa-flag{
+    margin-right: 5px;
+    font-size: 35px;
+    vertical-align: middle;
+}
 
 /* Content */
 .container{
-    margin: auto;
-    padding-top: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 700px;
+    margin: 275px auto;
+
 
 }
 .content1{
-    background: rgba(1, 1, 1, .5);
-    color: white;
-    width: 35%;
     padding: 15px 0;
     margin-bottom: 2px;
-    font-size: 24px;
+    color: #fff;
+    background: rgba(1, 1, 1, .5);
     text-align: center;
-
+}
+.content1 h1{
+    font-size: 24px;
+    font-weight: normal;
 }
 .content{
     background: rgba(1, 1, 1, .5);
-    color: white;
-    width: 35%;
+    color: #fff;
     padding: 30px 20px;
     text-align: center;
 }
 input {
     display: block;
 }
-.social-arae{
-    margin: 0 auto;
-    letter-spacing:-4px;
+.fb-content{
+    font-size:0; /* убираем горизонтальные отступы */
+    line-height:0; /* ...и вертикальные в некоторых браузерах */
+    letter-spacing:-1px;
+}
+.fb-content li{
+    display: inline-block;
+    font-size:14px;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.fb-login,
+.fb-reg{
+    display: inline-block;
+    border: 1px solid transparent;
+    background: #375090;
+
+}
+.fb-reg{
+    border-radius: 5px 0 0 5px;
+    border-right: 1px ridge;
+    font-size: 11px;
+}
+.fb-login{
+    border-radius: 0 5px 5px 0;
 }
 .fa-facebook{
-    padding:9px 20px 13px 10px;
-    border: 1px solid transparent;
-    border-right: 1px inset;
-    border-radius: 10px 0 0 10px;
-    background: #375090;
+    color: #fff;
+    padding: 15px;
+    vertical-align: middle;
+
 }
-span.fa-facebook{
-    font-size: 16px;
+span.fa-facebook {
+    font-size: 19px;
 }
-.social{
-    display: inline;
-    width: 250px;
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 0 10px 10px 0;
-    background: #375090;
-    font-size: 16px;
+a.fb-login{
+    padding: 16px 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-transform: capitalize;
 }
+.fb-login span{
+    font-weight: 100;
+    text-transform: lowercase;
+}
+.fa-chevron-right{
+    margin-left: 15px;
+    font-weight: 100;
+}
+
 .social::-webkit-input-placeholder {color:#fff; font-weight: bold;}
 .social::-moz-placeholder          {color:#fff; font-weight: bold;}/* Firefox 19+ */
 .social:-moz-placeholder           {color:#fff; font-weight: bold;}/* Firefox 18- */
@@ -153,6 +190,7 @@ span.fa-facebook{
 }
 label.update{
     font-size: 14px;
+    font-weight: normal;
 }
 [type=submit]{
     width: 150px;
@@ -174,6 +212,7 @@ label.update{
 .fancy span {
     display: inline-block;
     position: relative;
+    font-size: 16px;
     line-height: 0;
 }
 .fancy span:before,
@@ -194,3 +233,8 @@ label.update{
     width: 130px;
     margin-left: 5px;
 }
+.prescription{
+    font-size: 11px;
+}
+
+
