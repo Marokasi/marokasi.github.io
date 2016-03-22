@@ -1,0 +1,152 @@
+.container{
+    min-width: 768px;
+}
+.container:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/* Header */
+.header-menu{
+    display: none;
+}
+header h1{
+    padding-bottom: 54px;
+}
+.site-logo{
+    float: left;
+    display: block;
+}
+.footer-nav-header{
+    display: block;
+    float: left;
+}
+.footer-nav-header li{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.footer-nav-header li a{
+    display: block;
+    margin-right: 15px;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+}
+.footer-nav-header li a:hover{
+    border-bottom: 3px solid #edbfff;
+}
+span.title-hide-show{
+    display: none;
+}
+.title{
+    text-align: left;
+}
+.title-hide{
+    display: block;
+    color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+.title h2{
+    font-size: 48px;
+}
+.title h2:before{
+    left: -42px;
+}
+.title h2:after{
+    right: -400px;
+}
+.title span{
+    font-size: 24px;
+}
+
+
+/* main */
+/*About */
+.about ul{
+    width: auto;
+}
+.about li{
+    width: 25%;
+    float: left;
+    margin: 0 4%;
+}
+.about p{
+    font-size: 16px;
+}
+.about a{
+    font-size: 18px;
+}
+
+/* Blog */
+
+.portfolio{
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    padding: 0;
+}
+.updates{
+    width: 45%;
+    margin-left: 5%;
+    float: right;
+}
+.updates h3{
+    margin: 10px 0 20px;
+}
+
+/* Brands */
+.brands{
+    padding: 30px 0;
+}
+.brands li{
+    float: left;
+    margin-bottom: 0;
+    margin-right: 77px;
+}
+.brands li:last-of-type{
+    margin-right: 0;
+}
+
+/* Products */
+
+.products{
+    padding: 100px 0;
+}
+.news-box{
+    width: auto;
+}
+.news-box li{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+.news-box li:last-of-type{
+    margin-right: 0;
+}
+
+/* Footer */
+footer{
+    padding: 40px 0 80px;
+}
+.footer-nav{
+    padding-bottom: 40px;
+}
+
+.footer-nav li{
+    float: left;
+}
+footer p{
+    float: right;
+}
+.footer-nav a{
+    font-size: 20px;
+}

@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+    url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-italic-webfont.eot');
+    src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+    url('../fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Georgia Italic';
+    src: url('../fonts/georgia/georgia_italic-webfont.eot');
+    src: url('../fonts/georgia/georgia_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/georgia/georgia_italic-webfont.woff2') format('woff2'),
+    url('../fonts/georgia/georgia_italic-webfont.woff') format('woff'),
+    url('../fonts/georgia/georgia_italic-webfont.ttf') format('truetype'),
+    url('../fonts/georgia/georgia_italic-webfont.svg#georgiaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Header */
+header{
+    padding: 55px 0;
+    background-image: url("../img/header-bg.jpg");
+    background-size: cover;
+    min-height: 502px;
+}
+header h1{
+    padding-bottom: 19px;
+}
+.footer-nav-header{
+    display: none;
+}
+.header-menu li{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0;
+    border: 1px groove transparent;
+    text-transform: uppercase;
+}
+.main-link{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border-bottom: 3px solid #edbfff;
+}
+.header-menu li.main-list:hover{
+    max-width: 200px;
+    background: rgba(65, 51, 72, 0.8);
+    border: 1px groove black;
+    border-radius: 10px 10px 0 0;
+}
+.header-menu li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+    background-color: rgba(65, 51, 72, 0.8);
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border: 1px groove black;
+    border-radius: 0 0 10px 10px;
+    z-index: 999;
+}
+.header-menu li ul.dropdown li{
+    border-top: 1px groove black;
+    border-bottom: 2px solid transparent;
+}
+.header-menu li ul.dropdown li:hover{
+    background: rgba(43, 34, 49, 0.8);
+    border-bottom: 2px solid #edbfff;
+}
+.header-menu li:hover ul.dropdown {
+    display: block; /* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;
+}
+.header-slider{
+    padding: 104px 0 60px;
+}
+@media screen and (min-width: 480px){
+    .header-slider{
+        position: relative;
+        align-items: stretch;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .header-slider:after{
+        content: "";
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+    }
+    .title{
+        float: left;
+        width: 41.5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (min-width: 480px){
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.title h2{
+    position: relative;
+    color: #fefefe;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+}
+.title span{
+    display: block;
+    color: #edbfff;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.title h2:before {
+    content: "";
+    display: block;
+    background: url("../img/arrow-left.png") left no-repeat;
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.title-hide{
+    display: none;
+}
+.title-hide-show{
+    display: none;
+}
+
+@media  screen and (min-width: 480px){
+    .title h2:before{
+        top: 17px;
+        left: -35px;
+    }
+}
+.title h2:after{
+    content:"";
+    display: block;
+    background: url("../img/arrow-right.png")right no-repeat;
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+@media screen and (min-width: 480px){
+    .title h2:after{
+        top: 17px;
+        right: -190px;
+    }
+}
+
+.picture{
+    display: none;
+}
+@media screen and (min-width: 480px){
+    .picture{
+        display: block;
+        float: right;
+        width: 41.5%;
+    }
+    .picture img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Main */
+.about{
+    padding: 55px 0 72px;
+    background: linear-gradient(#745083,#33253a);
+    background-size: cover;
+}
+.about ul{
+    width: 58%;
+    margin: 0 auto;
+    text-align: left;
+}
+@media screen and (min-width: 480px){
+    .about ul{
+        width: 75%;
+    }
+}
+.about li{
+    margin: 8px 0;
+    padding-left: 14px;
+    list-style-image: url("../img/key.png");
+}
+.about h3{
+    color: #fff;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.about p{
+    padding: 6px 0;
+    color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+}
+span.show{
+    display: none;
+}
+@media screen and (min-width: 480px){
+    span.show{
+        display: inline;
+    }
+}
+p.readmore{
+    text-align: right;
+}
+.about a{
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.about a:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+/* Blog */
+.blog{
+    padding: 60px 0 70px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
+}
+.portfolio{
+    width: 88%;
+    margin: 0 auto;
+    padding: 18px 0 15px;
+    border-bottom: 1px solid #efefef;
+}
+.portfolio a{
+    display: block;
+    background: url("../img/photo.png") no-repeat left;
+    padding: 15px 0 0 57px;
+    color: #454545;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.portfolio span{
+    display: block;
+    color: #edbfff;
+}
+span.hide{
+    display: none;
+}
+.portfolio p{
+    padding: 0 0 0 55px;
+    text-align: left;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 16px;
+}
+@media screen and (min-width: 480px){
+    .portfolio span.hide{
+        display: inline;
+        color: #454545;
+    }
+}
+.updates{
+    width: 88%;
+    margin: 0 auto;
+    text-align: left;
+}
+@media screen and (min-width: 480px){
+   .updates{
+       width: 70%;
+   }
+}
+.updates h3{
+    margin: 47px 0 20px;
+    color: #454545;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.updates li{
+    background: url("../img/update1.png") left no-repeat;
+    margin-bottom: 11px;
+    padding: 0 0 0 65px;
+    height: 49px;
+}
+p.post-title{
+    color: #454545;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+.post-title-hide{
+    display: none;
+}
+@media screen and (min-width: 480px){
+    .post-title-hide{
+        display: inline-block;
+    }
+}
+p.post-info{
+    color: #454545;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+}
+.post-info-hidden{
+    display: none;
+}
+.post-info-show{
+    display: none;
+}
+
+p.more-posts{
+    float: right;
+}
+.more-posts a{
+    display: block;
+    padding-top: 13px;
+    color: #454545;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/* Brands */
+
+.brands{
+    padding:106px 0 20px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;
+}
+.brands li{
+    margin-bottom: 50px;
+}
+ /*Products */
+
+.products{
+    background: #ececec;
+    display: none;
+}
+@media screen and (min-width: 480px){
+    .products{
+        display: block;
+        padding: 60px 0 70px;
+    }
+    .info{
+        display: none;
+    }
+    .comments{
+        display: none;
+    }
+    .news{
+        display: none;
+    }
+    .news-box{
+        width: 80%;
+        margin:  0 auto;
+    }
+    .news-box ul{
+        text-align: left;
+    }
+    .news-box ul li{
+        padding: 15px 0;
+    }
+    .news-box h4{
+        padding-bottom: 10px;
+        color: #454545;
+        font-family: "League Gothic";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    p.news-info{
+        color: #454545;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+    }
+}
+
+
+/*  Footer */
+
+footer{
+    padding: 40px 0 150px;
+    background: url("../img/footer-bg.jpg");
+    background-size: cover;
+}
+.footer-nav{
+    display: none;
+}
+@media screen and (min-width: 480px){
+    .footer-nav{
+        display: block;
+    }
+    .footer-nav li{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .footer-nav a{
+        font-family: "League Gothic";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    footer a{
+        display: inline-block;
+        padding-top: 20px;
+    }
+}
+footer a{
+    color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+}
+footer span{
+    font-weight: bold;
+}
+
