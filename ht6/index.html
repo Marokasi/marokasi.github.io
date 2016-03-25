@@ -10,10 +10,9 @@
 <body>
 <div class="wrapper">
     <header>
-        <p class="number"><span class="fa fa-phone"></span> (044)123-45-67 (044)567-89-10 </p>
+        <p class="number">(044)123-45-67 (044)567-89-10 </p>
         <div class="registration">
             <form>
-                <span class="fa fa-user"></span>
                 <input  type="text" name="login" placeholder="логин">
                 <input  type ="password" name="password" placeholder="пароль">
                 <input class="btn featured" type ="submit" value="вход">
@@ -46,12 +45,13 @@
                 <li><a href ="#">КОНТАКТЫ</a></li>
             </ul>
             <ul class ="shopping">
-                <li><a href="#"><img src="img/tray.png">товаров: <span> 0</span></a></li>
-                <li><a class="sum" href="#">на сумму: <span> 0.00 грн</span></a> </li>
+                <!--<li><a href="#"><img src="img/tray.png">товаров: <span> 0</span></a></li>-->
+                <li><a class ="tray" href="#"> товаров: <span> 0 </span></a></li>
+                <li><a href="#"> на сумму: <span class="sum"> 0.00 грн</span></a> </li>
             </ul>
         </nav>
         <aside class="left">
-            <p><span class="fa fa-file-text-o"></span> КАТАЛОГ ПРОДУКЦИИ:</p>
+            <p> КАТАЛОГ ПРОДУКЦИИ:</p>
             <ul>
                 <li class="main-list" ><a class ="titled" href="#"> ШИНЫ</a>
                     <ul class="sublist">
@@ -80,36 +80,34 @@
             </ul>
         </aside>
         <aside class ="right">
-            <p><span class="fa fa-file-text-o"></span>БРЕНДЫ</p>
-
-        <fieldset>
-            <form>
-                <label>
-            <input type="checkbox" name="" value=""> Бренд 1
-                </label>
-                <label>
-            <input type="checkbox" name="" value=""> Бренд 2
-                </label>
-                <label>
-            <input type="checkbox" name="" value=""> Бренд 3
-                </label>
+            <p>БРЕНДЫ</p>
+            <form class="right-search">
+                <legend>шыны</legend>
+                    <label>
+                        <input type="checkbox" name="tyres" value="Бренд 1"> Бренд 1
+                    </label>
+                    <label>
+                        <input type="checkbox" name="tyres" value="Бренд 2"> Бренд 2
+                    </label>
+                    <label>
+                        <input type="checkbox" name="tyres" value="Бренд 3"> Бренд 3
+                    </label>
             </form>
-        </fieldset>
-        <fieldset>
-            <legend><img src="img/circle.png">ДИСКИ</legend>
-            <form>
-                <label>
-                    <input type="checkbox" name="" value=""> Бренд 1
-                </label>
-                <label>
-                    <input type="checkbox" name="" value=""> Бренд 2
-                </label>
-                <label>
-                    <input type="checkbox" name="" value=""> Бренд 3
-                </label>
+            <form class="right-search">
+                <legend>диски</legend>
+                    <label>
+                        <input type="checkbox" name="rims" value="Бренд 1"> Бренд 1
+                    </label>
+                    <label>
+                        <input type="checkbox" name="rims" value="Бренд 2"> Бренд 2
+                    </label>
+                    <label>
+                        <input type="checkbox" name="rims" value="Бренд 3"> Бренд 3
+                    </label>
             </form>
-        </fieldset>
-        <input class="choose" type ="submit" value ="ВЫБРАТЬ">
+            <form class="right-search">
+                <input class="choose" type ="submit" value ="ВЫБРАТЬ">
+            </form>
         </aside>
             <div class="container">
                 <ul>
@@ -131,8 +129,6 @@
                         <img src="img/tire-right.png">
                         <p class="price">393.00 грн.</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <a class="brand-name" href="#">Goodyear</a>
                         <p class="brand-type">Ultra Grip Extreme</p>
@@ -151,8 +147,6 @@
                         <img src="img/tire-right.png">
                         <p class="price">393.00 грн.</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <a class="brand-name" href="#">Goodyear</a>
                         <p class="brand-type">Ultra Grip Extreme</p>
