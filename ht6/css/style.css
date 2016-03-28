@@ -63,6 +63,7 @@ p.number:after{
     top: 2px;
     left: 2px;
 }
+.registration a.registration-link,
 .btn{
     border: none;
     color: #fff;
@@ -83,17 +84,43 @@ p.number:after{
 }
 .nav-head {
     float: right;
-    margin-top: 2px;
-    padding: 0 6px;
+    padding: 10px 30px;
     border: 1px solid gray;
     border-radius: 10px;
     -webkit-box-shadow: 5px 5px 9px -3px rgba(180,180,180,1);
     -moz-box-shadow: 5px 5px 9px -3px rgba(180,180,180,1);
     box-shadow: 5px 5px 9px -3px rgba(180,180,180,1);
 }
-.nav-head li{
+.nav-head a {
     float: left;
-    padding: 2px;
+    position: relative;
+}
+
+span.home{
+    background: url("../img/home.png") no-repeat;
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    top: -5px;
+    left: -23px;
+}
+
+span.net{
+    background: url("../img/net.png") no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    top: -5px;
+    left: -6px;
+}
+
+span.letter{
+    background: url("../img/letter.png") no-repeat;
+    position: absolute;
+    width: 12px;
+    height: 9px;
+    top: -5px;
+    left: 12px;
 }
 .bunner{
     margin: 5px 0;
@@ -332,7 +359,7 @@ label{
 .container{
     float: left;
     width: 500px;
-    margin: 30px 10px;
+    margin: 30px 10px 40px 10px;
     padding: 10px;
     background-image: linear-gradient(#e4e7e8, #93a7b0);
 }
@@ -346,17 +373,29 @@ label{
 .brands{
     clear: both;
 }
-.container li{
+/*.container li{*/
+    /*float: left;*/
+    /*margin: 10px 12px;*/
+    /*text-align: center;*/
+/*}*/
+figure{
     float: left;
     margin: 10px 12px;
+    border-radius: 10px;
     text-align: center;
 }
-.container img{
+figure img{
     padding: 3px 30px;
     background: #fff;
     border: 1px solid #000;
     border-radius: 5px;
 }
+/*.container img{*/
+    /*padding: 3px 30px;*/
+    /*background: #fff;*/
+    /*border: 1px solid #000;*/
+    /*border-radius: 5px;*/
+/*}*/
 a.brand-name{
     color: #206988;
     font-size: 15px;
@@ -374,9 +413,60 @@ p.price{
     margin-bottom: 25px;
 padding: 0 115px;
 }
+
 .brands li{
+   float: left;
+    padding-right: 15px;
+}
+.brands span{
     display: inline-block;
-    padding-right: 11px;
+}
+
+span.toyo{
+    background: url("../img/brand-logos/toyo-logo.png")no-repeat;
+    width: 83px;
+    height: 21px;
+}
+
+span.bridge{
+    background: url("../img/brand-logos/bridge-logo.png") no-repeat;
+    width: 97px;
+    height: 14px;
+}
+
+span.continental{
+    background: url("../img/brand-logos/continental-logo.png") no-repeat;
+    width: 77px;
+    height: 21px;
+}
+
+span.doop{
+    background: url("../img/brand-logos/doop-log.png") no-repeat;
+    width: 59px;
+    height: 21px;
+}
+
+span.avon{
+    background: url("../img/brand-logos/avon-logo.png") no-repeat;
+    width: 77px;
+    height: 13px;
+}
+
+span.tire-logo{
+    background: url("../img/brand-logos/tire-logo.png") no-repeat;
+    width: 57px;
+    height: 27px;
+}
+span.pirelli{
+    background: url("../img/brand-logos/pirelli-logo.png") no-repeat;
+    width: 61px;
+    height: 14px;
+}
+
+span.dunlop{
+    background: url("../img/brand-logos/dunlop-logo.png") no-repeat;
+    width: 72px;
+    height: 13px;
 }
 .brands li:last-child{
     padding-right: 0;
@@ -386,6 +476,7 @@ padding: 0 115px;
 footer{
     background: url("../img/footer-bg.jpg") no-repeat;
     background-size: cover;
+    margin-top: 25px;
     padding: 10px 50px;
     text-align: center;
 }
