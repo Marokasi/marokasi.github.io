@@ -1,0 +1,13 @@
+
+.header{
+    padding: 55px 0;
+    background-image: url("../img/header-bg.jpg");
+    background-size: cover;
+    min-height: 502px;
+}
+.random{
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#745083, endColorstr=#33253a)";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#745083, endColorstr=#33253a);
+    padding: 55px 0 72px;
+    background-size: cover;
+}

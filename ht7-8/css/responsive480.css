@@ -2,3 +2,139 @@
     min-width: 480px;
 }
 
+
+.header-slider{
+    position: relative;
+    align-items: stretch;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header-slider:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    float: left;
+    width: 41.5%;
+    margin-right: 5%;
+}
+
+.title h2:before{
+    top: 17px;
+    left: -35px;
+}
+.title h2:after{
+    top: 17px;
+    right: -242px;
+}
+
+.picture{
+    display: block;
+    float: right;
+    width: 41.5%;
+}
+
+/* Main */
+
+.about ul{
+    width: 75%;
+}
+
+span.show{
+    display: inline;
+}
+
+/* Blog */
+
+.portfolio span.hide{
+    display: inline;
+    color: #454545;
+}
+
+.updates{
+    width: 75%;
+}
+
+.post-title-hide{
+    display: inline-block;
+}
+.post-info-date{
+    display: inline-block;
+}
+
+/*Products */
+
+.products{
+    display: block;
+    padding: 60px 0 70px;
+}
+.info{
+    display: none;
+}
+.comments{
+    display: none;
+}
+.news{
+    display: none;
+}
+.news-box{
+    width: 80%;
+    margin:  0 auto;
+}
+.news-box ul{
+    text-align: left;
+}
+.news-box ul li{
+    padding: 15px 0;
+}
+.news-box h4{
+    padding-bottom: 10px;
+    color: #454545;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+p.news-info{
+    color: #454545;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/*  Footer */
+
+.footer-nav{
+    display: block;
+}
+.footer-nav li{
+    display: inline-block;
+    margin: 0 3px;
+}
+.footer-nav a{
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+footer a{
+    display: inline-block;
+    padding-top: 20px;
+}
+
+
