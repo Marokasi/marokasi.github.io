@@ -1,18 +1,29 @@
-.container{
+header,
+main,
+footer{
     min-width: 768px;
 }
 
 /* Header */
+nav:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+
+}
 .header-menu{
     display: none;
 }
 header h1{
     padding-bottom: 54px;
+    padding-left: 15px;
 }
 .site-logo{
     float: left;
-    display: block;
 }
+
 .footer-nav-header{
     display: block;
     float: left;
@@ -21,6 +32,11 @@ header h1{
     display: inline-block;
     padding-bottom: 20px;
 }
+
+.footer-nav-header li:first-child{
+    padding-left: 15px;
+}
+
 .footer-nav-header li a{
     display: block;
     margin-right: 15px;
@@ -53,18 +69,26 @@ span.title-hide-show{
     font-size: 48px;
 }
 .title h2:before{
+    top: 83px;
     left: -42px;
-}
-.title h2:after{
-    right: -375px;
 }
 .title span{
     font-size: 24px;
 }
-
+.picture:after{
+    right: 26px;
+}
 
 /* main */
 /*About */
+
+.about:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
 .about ul{
     width: auto;
 }
@@ -82,15 +106,22 @@ span.title-hide-show{
 
 /* Blog */
 
+.blog:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
 .portfolio{
     width: 45%;
-    margin-right: 5%;
+    margin: 0 2.5%;
     float: left;
     padding: 0;
 }
 .updates{
     width: 45%;
-    margin-left: 5%;
+    margin: 0 2.5%;
     float: right;
 }
 .updates h3{
@@ -101,13 +132,17 @@ span.title-hide-show{
 .brands{
     padding: 30px 0;
 }
+
+.brands:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
 .brands li{
     float: left;
-    margin-bottom: 0;
-    margin-right: 9%;
-}
-.brands li:last-of-type{
-    margin-right: 0;
+    margin: 0 3.3%;
 }
 
 /* Products */
@@ -115,16 +150,20 @@ span.title-hide-show{
 .products{
     padding: 100px 0;
 }
+.products:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
 .news-box{
     width: auto;
 }
 .news-box li{
     float: left;
-    width: 30%;
-    margin-right: 5%;
-}
-.news-box li:last-of-type{
-    margin-right: 0;
+    width: 29%;
+    margin: 2%;
 }
 
 /* Footer */
@@ -137,9 +176,11 @@ footer{
 
 .footer-nav li{
     float: left;
+    margin: 0 15px;
 }
 footer p{
     float: right;
+    padding: 0 40px 0 0;
 }
 .footer-nav a{
     font-size: 20px;

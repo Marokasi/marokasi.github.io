@@ -1,4 +1,6 @@
-.container{
+header,
+main,
+footer{
     min-width: 960px;
 }
 
@@ -19,6 +21,9 @@ header h1{
 }
 .footer-nav-header li{
     float: left;
+}
+.footer-nav-header li:last-child{
+    padding-right: 50px;
 }
 
 .box{
@@ -71,8 +76,8 @@ li.list-item-three{
 
 /* Portfolio */
 .portfolio{
-    width: 47%;
-    margin-right: 3%;
+    width: 45%;
+    margin: 0 2% 0 3%;
 }
 .portfolio a{
     font-size: 30px;
@@ -83,8 +88,9 @@ li.list-item-three{
 }
 /* Updates */
 .updates{
-    width: 47%;
-    margin-left: 3%;
+    width: 45%;
+    margin: 0 2% 0 3%;
+
 }
 .post-info-category{
     display: inline;
@@ -93,6 +99,10 @@ li.list-item-three{
     font-style: normal;
     font-weight: 100;
     font-size: 16px;
+}
+
+p.more-posts{
+    margin-right: 30px;
 }
   /* Brands */
 
@@ -152,6 +162,14 @@ p.info-copyright{
 
 
 /*  Footer */
+
+footer{
+    text-align: justify;
+}
+
+.footer-container{
+    display: inline-block;
+}
 
 .footer-nav{
     padding-bottom: 0;

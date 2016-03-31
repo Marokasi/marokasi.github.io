@@ -36,15 +36,12 @@ img{
     height: auto;
     height: auto\9; /* IE8 */
 }
-
-.container {
-    max-width: 320px;
-    padding: 0 10px;
+main{
+    min-width: 320px;
     margin: 0 auto;
     text-align: center;
 }
-
-.container:after{
+main:after{
     content:"";
     display: block;
     height: 0;
@@ -55,10 +52,11 @@ img{
 /* Header */
 
 header{
+    min-width: 320px;
     padding: 55px 0;
     background-image: url("../img/header-bg.jpg");
     background-size: cover;
-    /*min-height: 502px;*/
+    text-align: center;
 }
 
 header h1{
@@ -342,6 +340,7 @@ p.post-info{
 
 p.more-posts{
     float: right;
+    margin-right: 15px;
 }
 
 .more-posts a{
@@ -376,9 +375,11 @@ p.more-posts{
 /*  Footer */
 
 footer{
+    min-width: 320px;
     padding: 40px 0 150px;
     background: url("../img/footer-bg.jpg");
     background-size: cover;
+    text-align: center;
 }
 
 .footer-nav{

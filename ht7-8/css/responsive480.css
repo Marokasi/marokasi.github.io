@@ -1,4 +1,6 @@
-.container{
+header,
+main,
+footer{
     min-width: 480px;
 }
 
@@ -33,17 +35,29 @@
 
 .title h2:before{
     top: 17px;
-    left: -35px;
+    left: -27px;
 }
 .title h2:after{
+    display: none;
     top: 17px;
-    right: -242px;
+    right: -248px;
 }
 
 .picture{
     display: block;
+    position: relative;
     float: right;
     width: 41.5%;
+}
+.picture:after{
+    content:"";
+    display: block;
+    background: url("../img/arrow-right.png")right no-repeat;
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 145px;
+    right: -14px;
 }
 
 /* Main */

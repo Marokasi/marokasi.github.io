@@ -1,37 +1,6 @@
 
 /* Header */
 
-@media screen and (min-width: 480px){
-    .box{
-        position: relative;
-
-    }
-
-    .title{
-        position: absolute;
-        width: 50%;
-        float: left;
-        top: 50%;
-        left: 50%;
-        /* bring your own prefixes */
-        transform: translate(-50%, -50%);
-    }
-    .picture{
-        margin-left: auto;
-        margin-right: auto;
-        width:49%;
-
-    }
-    .title h2:before{
-        top: 17px;
-        left: -45px;
-    }
-    .title h2:after{
-        top: 17px;
-        right: -170px;
-    }
-
-}
 /* Main */
 
 .about{
@@ -55,16 +24,3 @@ footer{
 .footer-section{
     padding: 40px 0 150px;
 }
-/*@media screen and (min-width: 480px){*/
-/*.box{*/
-        /*position: relative;*/
-    /*}*/
-    /*.title{*/
-       /*width: 50%;*/
-        /*float: left;*/
-       /*top: 50%;*/
-        /*-ms-transform: translateY(50%);*/
-        /*text-align: left;*/
-    /*}*/
-
-/*}*/
