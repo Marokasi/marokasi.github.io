@@ -88,6 +88,16 @@ span.show{
     display: inline-block;
 }
 
+/* Brands */
+
+.brands li{
+    width: 32%;
+    margin: 0 0 5% 0;
+}
+.centered{
+     margin: 15px 0;
+}
+
 /*Products */
 
 .products{

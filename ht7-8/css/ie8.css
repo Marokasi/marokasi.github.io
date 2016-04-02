@@ -1,18 +1,358 @@
-.container{
-    max-width: 960px;
-
+.wrapper{
+    min-width: 960px;
  }
-
-img{
-    max-width: 100%;
-    height: auto;
-    height: auto\9; /* IE8 */
-}
 
  /* Header */
 
-.header{
-    padding: 55px 0;
-    background-image: url("../img/header-bg.jpg");
+.size{
+    padding-bottom: 150px;
+}
+
+header{
+    padding-bottom: 170px;
+}
+
+header h1{
+    padding: 0 0 54px 15px;
+    float: left;
+}
+
+.header-menu{
+    display: none;
+}
+.footer-nav-header{
+    display: block;
+    float: right;
+}
+
+.footer-nav-header li{
+    float: left;
+}
+
+.footer-nav-header li:last-child{
+    padding-right: 50px;
+}
+
+.footer-nav-header li a{
+    display: block;
+    margin-right: 15px;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+}
+
+.footer-nav-header li a:hover{
+    border-bottom: 3px solid #edbfff;
+}
+
+.header-slider{
+    padding: 0;
+    background: url("../img/header-slider-bg.png");
     background-size: cover;
+}
+
+.header-slider:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.box{
+    width: 960px;
+    position: relative;
+    padding: 0 100px;
+    margin: 0 auto;
+    align-items: initial;
+}
+
+.box:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.title{
+    float: left;
+    width: 50%;
+    padding: 40px 0 30px 0;
+    text-align: left;
+}
+
+.title h2{
+    font-size: 60px;
+}
+
+.title h2:before{
+    top: 105px;
+    left: -100px;
+}
+
+.position{
+    width: 1%;
+    float: left;
+}
+.position:before{
+    content: "";
+    display: block;
+    background: url("../img/arrow-right.png") left no-repeat;
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 145px;
+    right: 150px;
+}
+.title span{
+    font-size: 32px;
+}
+
+.title-hide{
+    display: block;
+    color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+
+span.title-hide-show{
+    display: inline;
+    color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.picture{
+    display: inline;
+    position: absolute;
+    top: -14px;
+    right: 250px;
+
+}
+
+/* Main */
+
+.about{
+    background: url("../img/about-bg.jpg");
+    background-size: cover;
+}
+
+.about:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.about ul{
+    width: auto;
+    text-align: left;
+}
+
+.about ul li{
+    width: 27%;
+    float: left;
+    margin: 0 3%;
+}
+
+li.list-item-two {
+    list-style-image: url("../img/say.png");
+}
+
+li.list-item-three{
+    list-style-image: url("../img/ringtonepng.png");
+}
+
+.about h3{
+    font-size: 30px;
+}
+
+.about p{
+    font-size: 16px;
+}
+
+.about a{
+    font-size: 18px;
+}
+
+span.show{
+    display: inline;
+}
+
+/* Blog */
+
+.blog:after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.portfolio{
+    width: 45%;
+    margin: 0 2% 0 3%;
+    float: left;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.portfolio span.hide{
+    display: inline;
+    color: #454545;
+}
+
+
+.updates{
+    width: 45%;
+    margin: 0 2% 0 3%;
+    float: right;
+}
+
+.updates h3 {
+    margin: 20px 0;
+}
+
+.post-title-hide{
+    display: inline-block;
+}
+
+.post-info-date{
+    display: inline-block;
+}
+
+.post-info-category{
+    display: inline-block;
+
+}
+
+p.more-posts{
+    margin-right: 50px;
+}
+
+/* Brands */
+
+.brands li{
+    width: auto;
+    float: left;
+    margin: 0 3.6%;
+}
+
+.centered{
+    margin: 15px 0;
+}
+
+/* products */
+
+.products{
+    display: block;
+    padding: 100px 0;
+    background: #ececec;
+}
+.news-box{
+    display: none;
+}
+
+.products:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.info,
+.comments,
+.news{
+    width: 33%;
+    float: left;
+    padding: 0 2%;
+    display: block;
+    text-align: left;
+}
+
+.info a{
+    color: #454545;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.info span{
+    color: #b9b9b9;
+}
+.info p,
+.comments p,
+.news p {
+    padding-top: 10px;
+    color: #787878;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+}
+p.info-copyright{
+    padding: 5px 0 10px;
+    color: #c5c5c5;
+    font-family: "Georgia Italic";
+    font-size: 16px;
+}
+.comments h3,
+.news h3{
+    color: #454545;
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer{
+    padding: 40px 0;
+    text-align: justify;
+}
+
+.footer-container{
+    display: inline-block;
+}
+
+.footer-nav{
+    display: block;
+    padding-bottom: 0;
+    margin-left: 25px;
+}
+.footer-nav li{
+    display: inline-block;
+    margin: 0 10px;
+
+}
+.footer-nav a{
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+footer a{
+    display: inline-block;
+    padding-top: 20px;
+}
+
+footer p{
+    float: right;
+    padding: 0 40px 0 0;
 }

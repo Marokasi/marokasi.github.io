@@ -1,26 +1,66 @@
-
 /* Header */
+
+@media screen and (min-width: 480px) {
+    .box{
+        padding: 0 50px;
+    }
+    .title{
+        padding: 100px 0 0 0;
+    }
+}
+.title h2:before{
+    top: 15px;
+}
+
+.title h2:after{
+    top: 15px;
+}
+
+@media screen and (min-width: 480px){
+    .title{
+        text-align: left;
+    }
+    .title h2:before{
+        top: 15px;
+        left: -30px;
+    }
+    .title h2:after{
+        top: 30px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .title{
+        padding: 50px 0;
+    }
+    .title h2:before{
+        top: 100px;
+        left: -50px;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .title h2:before{
+        top: 50px;
+        left: -50px;
+    }
+}
+
 
 /* Main */
 
 .about{
-    padding: 0;
-}
-.about-section{
     padding: 55px 0 72px;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#745083, endColorstr=#33253a)";
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#745083, endColorstr=#33253a);
 }
-.brands{
-    padding: 0;
-}
+
 .brands-section{
     padding: 106px 0 20px;
 }
 
-footer{
-    padding: 0;
-}
-.footer-section{
-    padding: 40px 0 150px;
-}
+
+
+

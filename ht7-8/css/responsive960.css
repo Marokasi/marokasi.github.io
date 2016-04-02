@@ -94,11 +94,6 @@ li.list-item-three{
 }
 .post-info-category{
     display: inline;
-    color: #454545;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
 }
 
 p.more-posts{
@@ -108,7 +103,7 @@ p.more-posts{
 
 
 .brands li{
-    margin: 0 6%;
+    margin: 0 3.6%;
 }
 
 .news-box{
