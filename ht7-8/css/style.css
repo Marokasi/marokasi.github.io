@@ -132,8 +132,22 @@ ul li ul.dropdown li{
     padding: 104px 0 60px;
 }
 
-.title h2{
+.arrow-left{
     position: relative;
+}
+
+.arrow-left span{
+    display: block;
+    position: absolute;
+    background: url("../img/arrow-left.png") left no-repeat;
+    width: 22px;
+    height: 34px;
+    top: 9px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.title h2{
     color: #fefefe;
     font-family: "League Gothic";
     font-style: normal;
@@ -149,17 +163,6 @@ ul li ul.dropdown li{
     line-height: 1;
 }
 
-.title h2:before {
-    content: "";
-    display: block;
-    background: url("../img/arrow-left.png") left no-repeat;
-    width: 22px;
-    height: 34px;
-    position: absolute;
-    top: 20px;
-    left: 0;
-}
-
 .title-hide{
     display: none;
 }
@@ -168,25 +171,30 @@ ul li ul.dropdown li{
     display: none;
 }
 
-.title h2:after{
-    content:"";
+.picture{
+    display: none;
+}
+
+.arrow-right{
+    position: relative;
+}
+
+.arrow-right span{
     display: block;
     background: url("../img/arrow-right.png")right no-repeat;
     width: 22px;
     height: 34px;
     position: absolute;
-    top: 20px;
-    right: 0;
-}
-
-.picture{
-    display: none;
+    top: -39px;
+    right: 25px;
+    cursor: pointer;
 }
 
 /* Main */
 
 .about{
     padding: 55px 0 72px;
+    background: -moz-linear-gradient(#745083,#33253a);
     background: linear-gradient(#745083,#33253a);
     background-size: cover;
 }
@@ -201,6 +209,7 @@ ul li ul.dropdown li{
     padding-left: 14px;
     list-style-image: url("../img/key.png");
 }
+
 .about h3{
     color: #fff;
     font-family: "League Gothic";
@@ -209,6 +218,7 @@ ul li ul.dropdown li{
     font-size: 24px;
     text-transform: uppercase;
 }
+
 .about p{
     padding: 6px 0;
     color: #fff;
@@ -217,6 +227,7 @@ ul li ul.dropdown li{
     font-weight: 300;
     font-size: 13px;
 }
+
 span.show{
     display: none;
 }
@@ -407,4 +418,5 @@ footer a{
 footer span{
     font-weight: bold;
 }
+
 

@@ -20,6 +20,7 @@ header h1{
 .header-menu{
     display: none;
 }
+
 .footer-nav-header{
     display: block;
     float: right;
@@ -63,11 +64,7 @@ header h1{
 }
 
 .box{
-    width: 960px;
     position: relative;
-    padding: 0 100px;
-    margin: 0 auto;
-    align-items: initial;
 }
 
 .box:after{
@@ -81,7 +78,7 @@ header h1{
 .title{
     float: left;
     width: 50%;
-    padding: 40px 0 30px 0;
+    padding: 25px 0 25px 100px;
     text-align: left;
 }
 
@@ -89,25 +86,21 @@ header h1{
     font-size: 60px;
 }
 
-.title h2:before{
-    top: 105px;
-    left: -100px;
+.arrow-left{
+    position: relative;
 }
 
-.position{
-    width: 1%;
-    float: left;
-}
-.position:before{
-    content: "";
+.arrow-left span{
     display: block;
-    background: url("../img/arrow-right.png") left no-repeat;
+    position: absolute;
+    background: url("../img/arrow-left.png") left no-repeat;
     width: 22px;
     height: 34px;
-    position: absolute;
-    top: 145px;
-    right: 150px;
+    top: 68px;
+    left: -45px;
+    cursor: pointer;
 }
+
 .title span{
     font-size: 32px;
 }
@@ -133,11 +126,25 @@ span.title-hide-show{
 }
 
 .picture{
-    display: inline;
-    position: absolute;
-    top: -14px;
-    right: 250px;
+    display: block;
+    float: right;
+    width: 34%;
+    margin-right: 30px;
+}
 
+.arrow-right{
+    position: relative;
+}
+
+.arrow-right span{
+    display: block;
+    background: url("../img/arrow-right.png") no-repeat;
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 90px;
+    right: 65px;
+    cursor: pointer;
 }
 
 /* Main */
@@ -213,7 +220,6 @@ span.show{
     color: #454545;
 }
 
-
 .updates{
     width: 45%;
     margin: 0 2% 0 3%;
@@ -234,7 +240,6 @@ span.show{
 
 .post-info-category{
     display: inline-block;
-
 }
 
 p.more-posts{
@@ -249,7 +254,7 @@ p.more-posts{
     margin: 0 3.6%;
 }
 
-.centered{
+.brand-aligned{
     margin: 15px 0;
 }
 
@@ -260,6 +265,7 @@ p.more-posts{
     padding: 100px 0;
     background: #ececec;
 }
+
 .news-box{
     display: none;
 }
@@ -290,9 +296,11 @@ p.more-posts{
     font-size: 48px;
     text-transform: uppercase;
 }
+
 .info span{
     color: #b9b9b9;
 }
+
 .info p,
 .comments p,
 .news p {
@@ -303,12 +311,14 @@ p.more-posts{
     font-weight: 100;
     font-size: 16px;
 }
+
 p.info-copyright{
     padding: 5px 0 10px;
     color: #c5c5c5;
     font-family: "Georgia Italic";
     font-size: 16px;
 }
+
 .comments h3,
 .news h3{
     color: #454545;
@@ -335,11 +345,12 @@ footer{
     padding-bottom: 0;
     margin-left: 25px;
 }
+
 .footer-nav li{
     display: inline-block;
     margin: 0 10px;
-
 }
+
 .footer-nav a{
     font-family: "League Gothic";
     font-style: normal;
@@ -347,6 +358,7 @@ footer{
     font-size: 20px;
     text-transform: uppercase;
 }
+
 footer a{
     display: inline-block;
     padding-top: 20px;

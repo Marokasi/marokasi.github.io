@@ -53,9 +53,13 @@ header h1{
 span.title-hide-show{
     display: none;
 }
+
 .title{
+    width: 53%;
+    padding: 50px 0 0 65px;
     text-align: left;
 }
+
 .title-hide{
     display: block;
     color: #fff;
@@ -65,18 +69,27 @@ span.title-hide-show{
     font-size: 16px;
     text-align: left;
 }
+
 .title h2{
     font-size: 48px;
 }
-.title h2:before{
-    top: 83px;
+
+.arrow-left span{
+    top: 65px;
     left: -42px;
 }
+
 .title span{
     font-size: 24px;
 }
-.picture:after{
-    right: 26px;
+
+.picture{
+     width: 33%;
+}
+
+.arrow-right span{
+    top: 114px;
+    right: 35px;
 }
 
 /* main */
