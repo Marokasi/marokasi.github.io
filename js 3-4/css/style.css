@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.wrapper:after{
+    content: "";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.title{
+    padding-bottom: 25px;
+}
+.box{
+    float: left;
+    width: 55%;
+}
+h2{
+    padding: 20px 0;
+}
+form{
+     margin-left: 55px;
+}
+label{
+    font-size: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 45px;
+    margin-top: 40px;
+    background-color: #C1E1EE;
+    border: 2px solid #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 48%;
+}

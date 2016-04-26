@@ -1,20 +1,34 @@
-
-var listNames = [];
+var arrName = [];
 
 for (var i = 0; i < 5; i++) {
-    var Name = prompt('Name');
-    listNames.push(Name);
-    console.log(listNames);
+    var name = prompt('Name');
+    arrName.push(name);
 }
-var userName = prompt('Write down your name');
+var userName = prompt( 'Write down your name' );
 
-    for( var k = 0; k < listNames.length; k++ ){
-    if( userName === Name){
-        alert(userName + ' ' + ', You have loged in successfully!');
-        break;
-    } else{
-        alert('Error!!!' + 'This name does not exist');
-        break;
-    }
+    for( var k = 0; k < arrName.length; k++ ) {
+    //if(!name) {
+        //    alert( 'You did not put anything!!!' );
+        //    break;
+        //}else if( userName === name ) {
+        //    alert( userName + ' , You have loged in successfully!' );
+        //    break;
+        //}else {
+        //    alert( 'Error!!! The name' + ' ' + userName + ' ' + ' does not exist' );
+        //    break;
+        //}
+        if( userName === name ) {
+            alert( userName + ' , You have loged in successfully!' );
+            break;
+        }
+        if (k == arrName.length) {
+            alert( 'Error!!! The name' + ' ' +userName + ' ' + 'does not exist' );
+            break;
+        }
 }
+
+
+
+
+
 
