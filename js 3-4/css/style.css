@@ -4,7 +4,7 @@
     padding: 0;
 }
 .wrapper{
-    text-align: center;
+    /*text-align: center;*/
     width: 800px;
     margin: 0 auto;
 }
@@ -16,17 +16,18 @@
     clear: both;
 }
 .title{
+    text-align: center;
     padding-bottom: 25px;
 }
 .box{
-    float: left;
-    width: 55%;
+    width: 30%;
 }
 h2{
+
     padding: 20px 0;
 }
 form{
-     margin-left: 55px;
+
 }
 label{
     font-size: 20px;
