@@ -1,0 +1,73 @@
+.wrapper{
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+p{
+    margin: 10px 0;
+}
+.tabs{
+    padding: 5px 5px 2px 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.tab-links{
+    padding: 5px 0 0 5px;
+    background: #ddd;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+}
+.tabs li{
+    padding: 10px 5px;
+    margin: 0 2px -1px 0;
+    display: inline-block;
+    background-color: #ccc;
+    border: 1px solid #000;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+li.active{
+    border-bottom: transparent;
+}
+.tabs li:hover{
+    background-color: #bbb;
+}
+.tabs a{
+    font-size: 20px;
+}
+.tab{
+    padding: 20px 10px;
+    display: none;
+}
+.active{
+    display: block;
+}
+
+
+/* Second part of home task */
+.box{
+    position: relative;
+}
+label{
+    display: block;
+    margin: 20px 10px;
+    font-size: 15px;
+}
+[type="text"]{
+  padding: 5px 15px;
+    /*position: relative;*/
+}
+[type ="button"]{
+    padding: 5px 15px;
+}
+.tooltip {
+    display:none;
+    position:absolute;
+    border:1px solid #333;
+    background-color:#fff;
+    border-radius:5px;
+    padding:10px 15px;
+    color:#000;
+    z-index: 10;
+}
+

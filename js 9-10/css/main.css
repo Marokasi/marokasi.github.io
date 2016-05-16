@@ -1,0 +1,49 @@
+.wrapper{
+    width: 1024px;
+    margin: 0 auto;
+}
+nav{
+    padding: 20px 0 40px 40px;
+    background-color: #EB3F3F;
+}
+.menu{
+
+}
+.menu li{
+    /*float: left;*/
+}
+.menu a{
+    font-size: 25px;
+    color: #fff;
+}
+.submenu{
+    display: none;
+    background-color: green;
+}
+.submenu li{
+    background-color: #EB3F3F;
+}
+.submenu a{
+    font-size: 20px;
+    color: #000;
+}
+.submenu_level3{
+    display: none;
+}
+.submenu_level3 li{
+
+}
+.submenu_level3 a{
+    font-size: 15px;
+    color: #11ADF4;
+}
+.submenu_level4{
+    display: none;
+}
+.submenu_level4 li{
+
+}
+.submenu_level4 a{
+    font-size: 10px;
+    color: #999999;
+}

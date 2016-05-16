@@ -1,0 +1,89 @@
+.wrapper{
+    width: 1024px;
+    margin: 0 50px;
+    text-align: center;
+}
+img{
+    max-width: 200px;
+    height: auto;
+}
+ul li{
+    display: inline-block;
+}
+
+
+/* cusel plagin */
+
+
+.cusel{
+    margin-top: 50px;
+}
+
+
+
+/* Checkbox  on jquery*/
+form{
+    padding: 50px 0 50px 10px;
+    text-align: left;
+    background-color: #11ADF4;
+}
+label{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.niceCheck {
+    width: 43px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/sprite.png);
+    vertical-align: middle;
+}
+.niceCheck input {
+   display: none;
+}
+.box{
+    background-color: #cccccc;
+}
+
+/* Checkbox on css */
+.pure{
+    background-color: bisque;
+}
+.container{
+    width: 20%;
+}
+#firstname,
+#secondname {
+    display: inline-block;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+
+}
+.item {
+    cursor: pointer;
+}
+.item:after {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    background: url(../img/checkboxes.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+#firstname:checked + .item:after {
+    background-position: 0 -22px;
+}
+#secondname:checked + .item:after {
+    background-position: 0 -22px;
+}
+.item:hover:after {
+    /*background-position: 0 0;*/
+}
+#firstname:checked, #secondname:checked  + .item:hover:after {
+    /*background-position: 0 0;*/
+}
+

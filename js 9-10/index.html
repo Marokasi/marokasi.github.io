@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href = "css/reset.css">
+    <link rel ="stylesheet" href = "css/style.css">
+    <link rel ="stylesheet" href = "css/jquery.fancybox.css">
+    <link rel ="stylesheet" href = "css/cusel.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src = "js/jquery.fancybox.js"></script>
+    <script src = "js/cusel.js"></script>
+    <script src = "js/checkbox.js"></script>
+    <script src ="js/main.js"></script>
+    <title>Carusel</title>
+</head>
+<body>
+<div class ="wrapper">
+        <div class = "jcarousel">
+            <ul>
+                <li><a class ="fancybox" href="img/POTD.jpg"><img src = "img/POTD.jpg"></a></li>
+                <li><a class ="fancybox" href="img/potd1.jpg"><img src = "img/potd1.jpg"></a></li>
+                <li><a class ="fancybox" href="img/images.jpg"><img src = "img/images.jpg"></a></li>
+                <li><a class ="fancybox" href="img/htu.jpg"><img src = "img/htu.jpg"></a></li>
+            </ul>
+        </div>
+    <select class ="cusel" title="myselect" id="idSelect" name="cusel">
+        <option value = "Volvo">Volvo</option>
+        <option value = "Ford">Ford</option>
+        <option value = "Jaguar">Jaguar</option>
+        <option value = "Mercedes">Mercedes</option>
+        <option value = "Audi">Audi</option>
+    </select>
+
+    <form>
+        <label>
+           <span class = "niceCheck">
+                <input type="checkbox" id="cbox1" value="first_checkbox">
+           </span>
+                This is the first checkbox
+        </label>
+        <label>
+           <span class = "niceCheck">
+                <input type="checkbox" id="cbox2" value="second_checkbox">
+           </span>
+            This is the first checkbox
+        </label>
+        <label>
+           <span class = "niceCheck">
+                <input type="checkbox" id="cbox3" value="third_checkbox">
+           </span>
+            This is the first checkbox
+        </label>
+        <label>
+           <span class = "niceCheck">
+                <input type="checkbox" id="cbox4" value="fourth_checkbox">
+           </span>
+            This is the first checkbox
+        </label>
+    </form>
+
+    <form class = "box">
+        <div>
+            <label for="ch1">label 1
+            <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+            </label>
+        </div>
+        <div>
+            <label for="ch2">label 2
+                <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+            </label>
+        </div>
+        <div>
+            <label for="ch3">label 3
+                <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+            </label>
+        </div>
+    </form>
+
+    <form class ="pure">
+        <div class ="container">
+            <input type="checkbox" id="firstname">
+            <label class ="item" for="firstname"> My first name</label>
+        </div>
+        <div class ="container">
+            <input type="checkbox" id="secondname">
+            <label class ="item" for="secondname"> My second name</label>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
