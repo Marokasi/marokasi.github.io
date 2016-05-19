@@ -10,7 +10,10 @@ nav{
 
 }
 .menu li{
-    /*float: left;*/
+    float: left;
+    display: block;
+    position: relative;
+    padding: 0 50px;
 }
 .menu a{
     font-size: 25px;
@@ -18,32 +21,64 @@ nav{
 }
 .submenu{
     display: none;
-    background-color: green;
+    position: absolute;
+    top: 40px;
+    left: 0;
 }
 .submenu li{
+    display: block;
+    /*width: 180px;*/
     background-color: #EB3F3F;
+    padding: 0;
+    border-bottom: 1px solid gray;
 }
+.submenu li:last-child{
+    border-bottom: none;
+}
+/*.dropdown:after{*/
+    /*content:"\f0da";*/
+    /*margin-left: 5px;*/
+    /*font-family: "FontAwesome";*/
+    /*font-size: 25px;*/
+    /*vertical-align: middle;*/
+/*}*/
 .submenu a{
+    display: block;
+    padding: 15px 17px;
     font-size: 20px;
+}
+.submenu li a:hover{
     color: #000;
 }
+
 .submenu_level3{
     display: none;
+    position: absolute;
+    top: 0;
+    left: 180px;
 }
 .submenu_level3 li{
-
+    width: 150px;
+    z-index: 1;
+    padding: 0;
 }
+
 .submenu_level3 a{
+    display: block;
+    padding: 18px;
     font-size: 15px;
-    color: #11ADF4;
 }
 .submenu_level4{
     display: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
 }
 .submenu_level4 li{
+    width: 150px;
 
 }
 .submenu_level4 a{
-    font-size: 10px;
-    color: #999999;
+    display: inline-block;
+    font-size: 15px;
 }

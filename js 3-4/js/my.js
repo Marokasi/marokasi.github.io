@@ -1,11 +1,4 @@
-var questionList = {
-    name: 'Test In Programming',
-    createQuestion: function createQuestion() {},
-    createInput: function createInput() {},
-    createButton: function createButton() {},
-    titleCreation: function titleCreation() {},
-    createH2: function createH2() {}
-};
+
 function createQuestion() {
     var box = document.createElement('div');
     box.classList.add('box');
@@ -43,17 +36,6 @@ function createButton() {
     button.setAttribute('value', 'check the result');
     return button;
 }
-/*create wrapper*/
-var wrapper = document.createElement('div');
-wrapper.classList.add('wrapper');
-document.body.appendChild(wrapper);
-wrapper.appendChild(titleCreation());
-for(var j = 0; j <3; j++){
-    wrapper.appendChild(createH2());
-    wrapper.appendChild(createQuestion());
-}
-wrapper.appendChild(createButton());
-
 /*creation of title of questionarie*/
 function titleCreation() {
     var title = document.createElement('h1');
@@ -69,3 +51,25 @@ function createH2() {
     titleSection.innerHTML = (j + 1) +'. Question number '+ (j + 1);
     return titleSection;
 }
+
+/*create wrapper*/
+var wrapper = document.createElement('div');
+wrapper.classList.add('wrapper');
+document.body.appendChild(wrapper);
+wrapper.appendChild(titleCreation());
+for(var j = 0; j <3; j++){
+    wrapper.appendChild(createH2());
+    wrapper.appendChild(createQuestion());
+}
+wrapper.appendChild(createButton());
+
+
+
+var questionList = {
+    name: 'Test In Programming',
+    createQuestion: function createQuestion() {},
+    createInput: function createInput() {},
+    createButton: function createButton() {},
+    titleCreation: function titleCreation() {},
+    createH2: function createH2() {}
+};
