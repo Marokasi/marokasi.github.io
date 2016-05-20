@@ -48,32 +48,40 @@ var app = {
         label.insertAdjacentElement('afterBegin', checkbox);
       }
 
-    };
+    }
 
   }
 
-}
+};
 
 
 
 var body = document.querySelector('body');
 
 
+var wrapper = app.createElement({
+  tagName: 'div',
+  className: 'wrapper',
+  parentElement: body
+});
+
 app.createElement({
   tagName: 'h1',
+  className: 'title',
   content: 'Тест по программированию',
-  parentElement: body
+  parentElement: wrapper
 });
 
 var form = app.createElement({
   tagName: 'form',
-  parentElement: body
+  parentElement: wrapper
 });
 
 app.generateQuestions(3, 3);
 
 app.createElement({
   tagName: 'input',
+  className: 'btn',
   inputType: 'submit',
   content: 'Проверить мои результаты',
   parentElement: form
