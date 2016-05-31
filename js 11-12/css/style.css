@@ -1,0 +1,27 @@
+.carousel-hider{
+    float: left;
+    width: 540px;
+    overflow: hidden;
+}
+.carousel-list{
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+.carousel-element{
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+.carousel-element img{
+    max-width: 250px;
+}
+.carousel-arrow-left, .carousel-arrow-right{
+    display: block;
+    float: left;
+    margin: 50px 25px 25px 25px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    cursor: pointer;
+}
