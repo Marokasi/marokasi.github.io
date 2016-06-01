@@ -1,28 +1,23 @@
+$(function(){
+    var template = $('#test').html();
 
-$(document).ready(function(){
-var $leftUIEl = $('.carousel-arrow-left');
-var $rightUTEL = $('.carousel-arrow-right');
-var $carouselList = $('.carousel-list');
-var elementsCount = $carouselList.find('li').length;
-var minimumOffset = - ((elementsCount - 5) * $positionOffset);
-var maximumOffset = 0;
+   var data = {
+       name: 'Иванов Иван Иванович',
+       photo: 'img/ho.png',
+       occupation: 'Студент заборостроительного университета',
+       reason: 'Хочу учить фронтенд, потому что:',
+       reason_list : ['Заборы строить не интересно', 'Платят мало', 'Приходится работать по ночам'],
+       tel: 'Мой контактный телефон ',
+       number: +38022222222,
+       vk: 'Мой профиль в контакте ',
+       vk_link:'http://vk.com',
+       vk_link_title: 'vk.com',
+       feedback: 'Мой фидбэк:',
+       feedback_text: 'Если нужно, могу построить вам забор'
+   };
+    var result = tmpl(template, data);
+    $('body').append(result)
 
-    var $positionOffset = 275;
-    var $currentLeftValue = 0;
-    $leftUIEl.click(function(){
-        if($currentLeftValue != maximumOffset){
-            $currentLeftValue += 275;
-            $carouselList.animate({ left: $currentLeftValue + 'px'}, 500)
-        }
-
-    });
-    $rightUTEL.click(function(){
-
-        if($currentLeftValue != minimumOffset){
-            $currentLeftValue -= 275;
-            $carouselList.animate({ left: $currentLeftValue + 'px'}, 500)
-        }
-
-    });
 });
+
 

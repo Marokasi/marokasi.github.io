@@ -25,3 +25,50 @@
     border: 1px solid gray;
     cursor: pointer;
 }
+.box:after{
+    content:'';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*second part of the home task*/
+
+.pers-info,
+.motivation,
+.contacts{
+    margin: 25px 0;
+    border-bottom: 1px solid #7B7B7B;
+}
+.personal-info{
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 35px;
+    border: 1px solid #CFCFCF;
+    box-shadow: 5px 4px 19px 5px #969696
+}
+h1{
+    text-align: center;
+}
+img{
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+}
+.motivation ul{
+    margin-left: 30px;
+}
+li{
+    line-height: 25px;
+    list-style-type: disc;
+}
+
+span{
+    display:block;
+}
+.phone{
+    margin-bottom: 50px;
+}
+a{
+    color: #0000F3;
+}
