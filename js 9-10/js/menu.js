@@ -56,7 +56,7 @@
 $(function(){
 var $menu = $('.menu li');
     $menu.hover(function(){
-        $(this).find('.submenu ').stop().fadeToggle(1000);
+        $(this).find('.submenu ').stop().slideToggle(350);
 
     })
 });
@@ -64,14 +64,14 @@ var $menu = $('.menu li');
 $(function(){
     var $submenu = $('.submenu li');
     $submenu.hover(function(){
-        $(this).find('.submenu_level3').stop().fadeToggle(1000);
+        $(this).find('.submenu_level3').stop().slideToggle(350);
     })
 });
 
 $(function(){
     var $submenu_level3 = $('.submenu_level3 li');
     $submenu_level3.hover(function(){
-        $(this).find('.submenu_level4').stop().fadeToggle(1000);
+        $(this).find('.submenu_level4').stop().slideToggle(350);
     })
 });
 
