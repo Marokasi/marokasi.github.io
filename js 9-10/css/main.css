@@ -35,13 +35,7 @@ nav{
 .submenu li:last-child{
     border-bottom: none;
 }
-/*.dropdown:after{*/
-    /*content:"\f0da";*/
-    /*margin-left: 5px;*/
-    /*font-family: "FontAwesome";*/
-    /*font-size: 25px;*/
-    /*vertical-align: middle;*/
-/*}*/
+
 .submenu a{
     display: block;
     padding: 15px 17px;
