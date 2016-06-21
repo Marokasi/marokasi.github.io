@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href = "css/reset.css">
+    <link rel ="stylesheet" href = "css/flexslider.css">
+    <!--<link rel ="stylesheet" href = "css/jquery.fancybox.css">-->
+    <link rel ="stylesheet" href = "css/select2.min.css">
     <link rel ="stylesheet" href = "css/style.css">
-    <link rel ="stylesheet" href = "css/jquery.fancybox.css">
-    <link rel ="stylesheet" href = "css/cusel.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src = "js/jquery.fancybox.js"></script>
     <script src = "js/checkbox.js"></script>
+    <script src = "js/jquery.flexslider.js"></script>
+    <script src = "js/select2.full.min.js"></script>
+    <script src = "js/init.js"></script>
     <script src ="js/main.js"></script>
     <title>Carusel</title>
 </head>
 <body>
 <div class ="wrapper">
-        <div class = "jcarousel">
-            <ul>
+        <div class = "flexslider">
+            <ul class ="slides">
                 <li><a class ="fancybox" href="img/POTD.jpg"><img src = "img/POTD.jpg"></a></li>
                 <li><a class ="fancybox" href="img/potd1.jpg"><img src = "img/potd1.jpg"></a></li>
                 <li><a class ="fancybox" href="img/images.jpg"><img src = "img/images.jpg"></a></li>
                 <li><a class ="fancybox" href="img/htu.jpg"><img src = "img/htu.jpg"></a></li>
             </ul>
         </div>
-    <select class ="cusel" title="myselect" id="idSelect" name="cusel">
-        <option value = "Volvo">Volvo</option>
-        <option value = "Ford">Ford</option>
-        <option value = "Jaguar">Jaguar</option>
-        <option value = "Mercedes">Mercedes</option>
-        <option value = "Audi">Audi</option>
-    </select>
+    <div class ="box_cusel">
+        <select class ="cusel" title="myselect" id="idSelect" name="cusel">
+            <option value = "Volvo">Volvo</option>
+            <option value = "Ford">Ford</option>
+            <option value = "Jaguar">Jaguar</option>
+            <option value = "Mercedes">Mercedes</option>
+            <option value = "Audi">Audi</option>
+        </select>
+    </div>
 
     <form>
         <label for = "cbox1" >
